@@ -1256,6 +1256,12 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#formation">Formation Anglais</a></li>
                     <li><a href="#contact" class="btn-nav">Contact</a></li>
+                    <li>
+                        <a href="https://www.facebook.com/iti" target="_blank" rel="noopener" aria-label="Facebook ITI"
+                            class="nav-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div class="menu-toggle" id="menuToggle">
@@ -1622,11 +1628,12 @@
                     <div class="cta-highlight">
                         <i class="fas fa-chart-bar"></i>
                         <p><strong>Obtenez votre niveau précis en anglais</strong> et une estimation de vos scores
-                            <strong>TOEFL, IELTS et TOEIC</strong>.</p>
+                            <strong>TOEFL, IELTS et TOEIC</strong>.
+                        </p>
                     </div>
 
                     <div class="cta-contact">
-                        <a href="tel:52169948" class="cta-phone"><i class="fas fa-phone"></i> 52 169 948</a>
+                        <a href="tel:58452262" class="cta-phone"><i class="fas fa-phone"></i> 58 452 262</a>
                         <a href="tel:58558320" class="cta-phone"><i class="fas fa-phone"></i> 58 558 320</a>
                     </div>
 
@@ -1653,9 +1660,11 @@
                 </div>
                 <div class="freelance-text">
                     <h3>Vous êtes freelance ? Rejoignez notre réseau !</h3>
-                    <p>Nous recherchons des <strong>prospecteurs freelances</strong> et des <strong>enseignants pour
-                            cours présentiels</strong>. Bénéficiez d'une <strong>commission attractive</strong> sur
-                        chaque inscription et accédez à un <strong>marché en pleine expansion</strong>.</p>
+                    <p>Nous recherchons des <strong>prospecteurs freelances</strong> pour la promotion de la plateforme
+                        d'apprentissage d'anglais à distance avec éventuellement des cours en présentiels. Bénéficiez
+                        d'une <strong>commission attractive</strong> sur chaque inscription et accédez à un
+                        <strong>marché en pleine expansion</strong>.
+                    </p>
                 </div>
                 <a href="mailto:iti@phonetiquegroupe.com?subject=Candidature%20Freelance%20-%20ITI&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20rejoindre%20votre%20r%C3%A9seau%20en%20tant%20que%20freelance.%0D%0A%0D%0ANom%20:%20%0D%0APr%C3%A9nom%20:%20%0D%0AT%C3%A9l%C3%A9phone%20:%20%0D%0AVille%20:%20%0D%0AProfil%20(prospecteur%20/%20enseignant%20pr%C3%A9sentiel)%20:%20%0D%0A%0D%0ACordialement,"
                     class="btn-freelance">
@@ -1675,7 +1684,8 @@
                     <p>Centre de formation professionnelle agréé par l'État Tunisien, en partenariat avec NEO-DynEd USA,
                         leader mondial de l'apprentissage de l'anglais.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/ititunis"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/iti" target="_blank" rel="noopener"
+                            aria-label="Facebook ITI"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
 
@@ -1762,7 +1772,7 @@
         }
 
         function startSlider() {
-            slideInterval = setInterval(nextSlide, 5000);
+            slideInterval = setInterval(nextSlide, 8000);
         }
 
         function resetSlider() {
@@ -1835,14 +1845,14 @@
                 track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
 
-            // Défilement automatique
+            // Défilement automatique (ralenti)
             let autoScroll = setInterval(() => {
                 if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) {
                     track.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
-                    track.scrollBy({ left: 1, behavior: 'auto' });
+                    track.scrollBy({ left: 0.8, behavior: 'auto' });
                 }
-            }, 40);
+            }, 80);
 
             // Pause au survol
             slider.addEventListener('mouseenter', () => clearInterval(autoScroll));
@@ -1851,9 +1861,9 @@
                     if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) {
                         track.scrollTo({ left: 0, behavior: 'smooth' });
                     } else {
-                        track.scrollBy({ left: 1, behavior: 'auto' });
+                        track.scrollBy({ left: 0.8, behavior: 'auto' });
                     }
-                }, 40);
+                }, 80);
             });
         });
     </script>
